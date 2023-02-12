@@ -487,30 +487,28 @@ https://support.you.163.com/appversync/check.do url reject
 # 网易自己域名广告
 ^https?:\/\/iadmusicmatvideo.music.126.net url reject
 ^https?:\/\/iadmusicmat.music.126.net url reject
-## 热搜,填充词,排行榜
+# 搜索页,填充词,排行榜
 ^https:\/\/interface3\.music\.163\.com\/api\/search\/rcmd\/keyword\/get\/v2\? url reject-dict
 ^https?:\/\/interface3?\.music\.163.com\/eapi\/search\/chart\/(detail|list)$ url reject-dict
 ^https?:\/\/interface3?\.music\.163.com\/eapi\/search\/default\/keyword\/list\? url reject-dict
 ^https?:\/\/interface3?\.music\.163.com\/eapi\/search\/rcmd\/keyword\/get\/v2$ url reject-dict
 ^https?:\/\/interface3?\.music\.163.com\/eapi\/search\/specialkeyword\/get\? url reject-dict
-## 播放页喜欢上方推广
-^https:\/\/interface3\.music\.163\.com\/eapi\/link\/position\/show\/resource\? url reject-dict
-## 首页右上角图标,仅保留听歌识曲
-^https:\/\/interface3\.music\.163\.com\/eapi\/link\/scene\/show\/resource\? url reject-dict
-## 播放页顶部关注图标
-^https:\/\/interface3\.music\.163\.com\/eapi\/user\/sub\/artist\/exist\? url reject-dict
-## 会员歌曲播放提示
-^https:\/\/interface3\.music\.163\.com\/eapi\/vipcenter\/tspopup\/get\? url reject-dict
-## 播放页顶部乐迷团图标
+# 播放页,多余图标,各种小提示,高品质音乐试用弹窗
 ^https:\/\/interface3\.music\.163\.com\/eapi\/community\/friends\/fans-group\/artist\/group\/get\? url reject-dict
-## 评论区,广告,星评馆
+^https:\/\/interface3\.music\.163\.com\/eapi\/link\/position\/show\/resource\? url reject-dict
+^https:\/\/interface3\.music\.163\.com\/eapi\/link\/position\/show\/strategy\? url reject-dict
+^https:\/\/interface3\.music\.163\.com\/eapi\/mlivestream\/entrance\/playpage\/v7\/get\? url reject-dict
+^https:\/\/interface3\.music\.163\.com\/eapi\/music\/songshare\/text\/recommend\/get\? url reject-dict
+^https:\/\/interface3\.music\.163\.com\/eapi\/user\/sub\/artist\/exist\? url reject-dict
+^https:\/\/interface3\.music\.163\.com\/eapi\/vipcenter\/tspopup\/get\? url reject-dict
+^https?:\/\/interface3\.music\.163\.com\/eapi\/resniche\/position\/play\/new\/get\? url reject-dict
+# 评论页,回复广告,星评馆
 ^https:\/\/interface3\.music\.163\.com\/eapi\/comment\/hotcomment\/collect\/fetchmodelinfov2\? url reject-dict
 ^https?:\/\/interface3\.music\.163\.com\/eapi\/comment\/feed\/inserted\/resources\? url reject-dict
 ^https?:\/\/interface3\.music\.163\.com\/eapi\/v1\/content\/exposure\/comment\/banner\/get\? url reject-dict
-# > 会员续费弹窗提醒  @RuCu6
+# 首页,右上角多余图标,会员续费弹窗
+^https:\/\/interface3\.music\.163\.com\/eapi\/link\/scene\/show\/resource\? url reject-dict
 ^https:\/\/interface3\.music\.163\.com\/eapi\/vipauth\/app\/auth\/recycle\? url reject-dict
-#网易云 播放页的各种小提示 @RuCu6
-^https:\/\/interface3\.music\.163\.com\/eapi\/link\/position\/show\/strategy\? url reject-dict
 # > 网易邮箱 - appconf.mail.163.com, analytics.163.com
 ^https?+:\/\/appconf\.mail\.163\.com\/mmad\/ url reject-200
 ^https:\/\/appconf\.mail\.163\.com\/mmad\/get\.do url reject
