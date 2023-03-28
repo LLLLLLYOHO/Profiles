@@ -1,5 +1,5 @@
 # ======= 高德地图 ======= #
-# 2023-03-28 15:25
+# 2023-03-29 00：16
 
 # 其他
 ^http:\/\/amdc\.m\.taobao\.com\/amdc\/mobileDispatch$ url reject-dict
@@ -20,7 +20,8 @@
 ^https:\/\/m5\.amap\.com\/ws\/mapapi\/poi\/infolite\/\? url script-response-body https://raw.githubusercontent.com/LLLLLLYOHO/Script/main/amap.js
 ^https:\/\/m5\.amap\.com\/ws\/shield\/frogserver\/aocs\/updatable\/1\? url script-response-body https://raw.githubusercontent.com/LLLLLLYOHO/Script/main/amap.js
 ^https:\/\/m5\.amap\.com\/ws\/valueadded\/weather\/v2\? url reject-dict
-^https:\/\/mps\.amap\.com\/ws\/mps\/scene\? url reject
+#禁用可开启足迹的动画
+#^https:\/\/mps\.amap\.com\/ws\/mps\/scene\? url reject
 ^https:\/\/sns\.amap\.com\/ws\/msgbox\/pull(_mp)?\? url reject-dict
 
 # 我的页面,个人主页,卡片,足迹
